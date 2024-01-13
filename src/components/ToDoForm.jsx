@@ -17,18 +17,12 @@ const ToDoForm = props => {
         setToDo("")
     }
 
-    const handleChange = () => {
-        setCompletedToDo(!completedToDo)
-    }
 
     return (
         <div>
             <form onSubmit={createToDo}>
                 <div className='formBox'>
                     <input id="toDo" value={toDo} type="text" onChange={ (e) => setToDo(e.target.value) } />
-                </div>
-                <div className='formBox'>
-                    <input id="completedToDo" type="checkbox" checked={completedToDo} onChange={handleChange}/>
                 </div>
                 <button>Add</button>
             </form>
