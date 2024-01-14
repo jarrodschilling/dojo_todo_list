@@ -3,7 +3,7 @@ import { useState } from 'react'
 const ToDoForm = props => {
     const {stateUpdater} = props
     const [toDo, setToDo] = useState("")
-    const [completedToDo, setCompletedToDo] = useState("false")
+    const [completedToDo, setCompletedToDo] = useState(false)
 
     const createToDo = (e) => {
         e.preventDefault()
@@ -19,12 +19,12 @@ const ToDoForm = props => {
 
 
     return (
-        <div>
+        <div className='formBox'>
             <form onSubmit={createToDo}>
-                <div className='formBox'>
-                    <input id="toDo" value={toDo} type="text" onChange={ (e) => setToDo(e.target.value) } />
+                <div>
+                    <input id="toDo" className="jsInput" value={toDo} type="text" onChange={ (e) => setToDo(e.target.value) } />
                 </div>
-                <button>Add</button>
+                <button className='jsBtn'>Add</button>
             </form>
         </div>
     )

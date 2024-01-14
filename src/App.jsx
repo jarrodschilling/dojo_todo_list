@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ToDoForm from './components/todoForm'
-import ToDoList from './components/todoList'
+import ToDoForm from './components/ToDoForm'
+import ToDoList from './components/ToDoList'
 import './App.css'
 
 function App() {
@@ -12,9 +12,8 @@ function App() {
 
   return (
     <>
-      <h1>APP PARENT</h1>
       <ToDoForm stateUpdater={stateUpdater}/>
-      <ToDoList liftedState={liftedState} stateUpdater={stateUpdater} setLiftedState={setLiftedState}/>
+      <ToDoList liftedState={liftedState} setLiftedState={setLiftedState}/>
     </>
   )
 }

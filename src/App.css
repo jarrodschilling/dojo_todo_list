@@ -5,6 +5,53 @@
   text-align: center;
 }
 
+.jsMasterList {
+  display: flex;
+  flex-direction: column;
+}
+
+.jsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .jsChecked {
   text-decoration: line-through;
+}
+
+.jsDelete {
+  background-color: rgb(58, 110, 213);
+  border: 2px solid black;
+  padding: 5px 20px;
+}
+
+.formBox {
+  display: flex;
+  justify-content: center;
+}
+
+.jsBtn {
+  background-color: aquamarine;
+  border: 2px solid black;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.jsInput {
+  height: 20px;
+  width: 150px;
+}
+
+form {
+  border: 3px solid black;
+  width: 20%;
+  padding: 20px;
 }
