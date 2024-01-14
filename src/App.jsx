@@ -14,7 +14,7 @@ function App() {
     <>
       <h1>APP PARENT</h1>
       <ToDoForm stateUpdater={stateUpdater}/>
-      <ToDoList liftedState={liftedState} stateUpdater={stateUpdater}/>
+      <ToDoList liftedState={liftedState} stateUpdater={stateUpdater} setLiftedState={setLiftedState}/>
     </>
   )
 }
